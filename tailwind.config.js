@@ -6,6 +6,6 @@ export const content = [
   './plugins/**/*.{js,ts}',
   './app.vue',
   './error.vue',
-];
-export const darkMode = 'class';
-export const plugins = [];
+]
+export const darkMode = 'class'
+export const plugins = []
