@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
   typescript: {
+    typeCheck: true,
     shim: false,
+  },
+  colorMode: {
+    fallback: 'dark', // fallback value if not system preference found
   },
 })

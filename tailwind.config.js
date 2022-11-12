@@ -3,8 +3,9 @@ module.exports = {
     extend: {
       colors: {
         background: {
-          light: '#f7fafc',
-          dark: '#1a202c',
+          light: 'var(--background-light)',
+          dark: 'var(--background-dark)',
+          contrast: 'var(--background-contrast)',
         },
       },
     },
