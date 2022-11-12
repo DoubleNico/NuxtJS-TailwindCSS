@@ -35,5 +35,25 @@ export default defineNuxtConfig({
       optimizeTranslationDirective: false,
     },
   },
-  css: ['~/assets/css/tailwind.css'],
+
+  app: {
+    head: {
+      charset: 'utf-16',
+      viewport: 'width=500, initial-scale=1',
+      title: 'Nuxt JS + Tailwind CSS',
+      meta: [
+        {
+          name: 'description',
+          content: 'A cool website with support for ESLINT and Prettier',
+        },
+      ],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: 'https://raw.githubusercontent.com/nuxt/nuxt.js/master/.github/nuxt.png',
+        },
+      ],
+    },
+  },
 })
