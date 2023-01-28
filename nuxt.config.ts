@@ -1,11 +1,17 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/color-mode',
+      {
+        fallback: 'light', // fallback value if not system preference found
+      },
+    ],
+  ],
+  css: ['~/assets/css/tailwind.css'],
   typescript: {
     shim: false,
-  },
-  colorMode: {
-    fallback: 'dark', // fallback value if not system preference found
   },
   app: {
     head: {
