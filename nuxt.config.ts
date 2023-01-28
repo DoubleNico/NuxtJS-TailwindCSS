@@ -8,6 +8,33 @@ export default defineNuxtConfig({
         fallback: 'light', // fallback value if not system preference found
       },
     ],
+    [
+      '@nuxtjs/i18n',
+      {
+        locales: [
+          {
+            name: 'Română',
+            code: 'ro',
+            iso: 'ro-RO',
+            file: 'ro-RO.json',
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.json',
+          },
+        ],
+        langDir: 'lang/',
+        defaultLocale: 'en',
+        detectBrowserLanguage: {
+          useCookie: true,
+          alwaysRedirect: true,
+          cookieKey: 'i18n_redirected',
+          redirectOn: 'root',
+        },
+      },
+    ],
   ],
   css: ['~/assets/css/tailwind.css'],
   typescript: {
