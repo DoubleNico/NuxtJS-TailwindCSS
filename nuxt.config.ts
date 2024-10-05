@@ -15,13 +15,13 @@ export default defineNuxtConfig({
           {
             name: 'Română',
             code: 'ro',
-            iso: 'ro-RO',
+            language: 'ro-RO',
             file: 'ro-RO.json',
           },
           {
             name: 'English',
             code: 'en',
-            iso: 'en-US',
+            language: 'en-US',
             file: 'en-US.json',
           },
         ],
@@ -36,10 +36,13 @@ export default defineNuxtConfig({
       },
     ],
   ],
+
   css: ['~/assets/css/tailwind.css'],
+
   typescript: {
     shim: false,
   },
+
   app: {
     head: {
       charset: 'utf-16',
@@ -60,4 +63,5 @@ export default defineNuxtConfig({
       ],
     },
   },
+  compatibilityDate: '2024-10-05',
 })
