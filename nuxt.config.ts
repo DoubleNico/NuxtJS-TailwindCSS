@@ -36,6 +36,8 @@ export default defineNuxtConfig({
     },
   },
 
+  css: ['~/assets/css/tailwind.css'],
+
   app: {
     head: {
       charset: 'utf-16',
