@@ -4,10 +4,10 @@
   @apply bg-white text-black;
 }
 
-.dark-mode {
+.dark {
   @apply bg-[#121212] text-white;
 }
 
-.contrast-mode {
+.contrast {
   @apply bg-[#000000] text-white;
 }

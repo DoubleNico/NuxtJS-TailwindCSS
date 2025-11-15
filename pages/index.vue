@@ -46,10 +46,9 @@ const availableLocales = computed(() => {
 const colorMode = useColorMode()
 
 const changeMode = () => {
-  if (colorMode.value === 'light') colorMode.value = 'dark'
-  else if (colorMode.value === 'dark') colorMode.value = 'contrast'
-  else colorMode.value = 'light'
-  colorMode.preference = colorMode.value
+  if (colorMode.value === 'light') colorMode.preference = 'dark'
+  else if (colorMode.value === 'dark') colorMode.preference = 'contrast'
+  else colorMode.preference = 'light'
 }
 </script>
 
