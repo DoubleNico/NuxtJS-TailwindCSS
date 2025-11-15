@@ -10,7 +10,7 @@
       >{{ lang.name }}</a
     >
     <p>{{ $t('hello') }}</p>
-    <h1 class="">This is a nice font</h1>
+    <h1 class="text-primary">This is a nice font</h1>
     <Icon name="mdi-home" />
   </div>
 </template>
